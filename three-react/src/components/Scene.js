@@ -9,6 +9,7 @@ import { updateHoverText } from './HoverText';
 import FarmMenu from './FarmMenu';
 import { ClipLoader } from 'react-spinners';
 import { CSSProperties } from 'react';
+import {ControlPanel} from "./ControlPanel";
 
 const Scene = () => {
     const [hoverText, setHoverText] = useState({ visible: false, content: '', x: 0, y: 0 });
@@ -242,6 +243,7 @@ const Scene = () => {
                     />
                 )}
             </div>
+            <ControlPanel />
         </>
     );
 };
