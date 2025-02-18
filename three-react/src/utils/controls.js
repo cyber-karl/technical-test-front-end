@@ -34,6 +34,7 @@ export function setupControls(camera, domElement, options = {}) {
             case 'ArrowRight':
             case 'KeyD': keys.right = true; break;
             case 'ShiftLeft': moveSpeed = sprintSpeed; break;
+            default: break;
         }
     };
 
@@ -48,6 +49,7 @@ export function setupControls(camera, domElement, options = {}) {
             case 'ArrowRight':
             case 'KeyD': keys.right = false; break;
             case 'ShiftLeft': moveSpeed = options.moveSpeed; break;
+            default: break;
         }
     };
 

@@ -1,5 +1,5 @@
 const api = process.env.REACT_APP_API_URL;
-const componentTypeCache = {};
+export const componentTypeCache = {};
 
 export async function fetchFarms() {
     try {
@@ -71,6 +71,7 @@ export async function fetchComponentType(componentTypeId) {
 
     try {
         const componentType = await fetchWithBackoff(api + `/component-types/${componentTypeId}`);
+        componentTypeCache[componentTypeId] = componentType.data;
         return componentType.data;
     } catch (error) {
         console.error('Error fetching component type:', error);

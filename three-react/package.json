@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-three/fiber": "^8.17.14",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -36,6 +37,8 @@
     ]
   },
   "devDependencies": {
-    "web-vitals": "^4.2.4"
+    "jest-fetch-mock": "^3.0.3",
+    "web-vitals": "^4.2.4",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
