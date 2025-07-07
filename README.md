@@ -76,3 +76,25 @@ composer install --ignore-platform-reqs
 
 ## Your Notes
 This is a place for you to add your notes, plans, thinking and any feedback you have for us of the task, please feel free to include whatever you like here, we'll make sure to read it.
+
+To run the frontend project:
+
+```bash
+cd three-react
+npm i
+npm start
+```
+
+Picked up the Front End Interview Task to show skill development while working at CH.
+Came up with the idea to display data from the database in a 3D environment.
+In order to do this, I decided to use ThreeJS technology to display a 3D model in the browser.
+From there, I was able to create a 3D environment with a camera and controller to look and move around the Scene.
+
+I initially followed the basic setup for ThreeJS using vanilla JS, however this would not integrate well into
+CH current platform. I then chose to refactor the code into a Create-React-App starter with React Components.
+From there, I was able to load the data into state using FetchAPI, and work with it to display a 3D farm with windmills.
+
+Lastly, I added in a hover feature so that you can move your mouse cursor over the rendered windmill and see specific
+information about it. This required some techniques in the back end to not overload on the amount of requests being sent
+such as back-off functionality and response caching.
+
